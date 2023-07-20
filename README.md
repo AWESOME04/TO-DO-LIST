@@ -1,24 +1,12 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/CuF8po8M)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11457882&assignment_repo_type=AssignmentRepo)
-# Frontend Mentor - Todo app
+# Frontend Mentor - Todo App Solution
 
-![Design preview for the Todo app coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW). Frontend Mentor challenges are a great way to improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Overview
 
-Thanks for checking out this front-end coding challenge.
+### The Challenge
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
-
-## The challenge
-
-Your challenge is to build out this todo app and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+The challenge was to create a responsive and interactive todo app with various features. Users should be able to:
 
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -28,74 +16,67 @@ Your users should be able to:
 - Filter by all/active/complete todos
 - Clear all completed todos
 - Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list
+- **Bonus**: Implement drag and drop to reorder items on the list
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![lighth_mode](https://github.com/AWESOME04/TO-DO-LIST/assets/102630199/ca069b2a-8f20-470e-abbb-a864d8a8bf73)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+![dark_mode](https://github.com/AWESOME04/TO-DO-LIST/assets/102630199/473d690f-7af9-40d8-872b-d5567b2c56ae)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+### Links
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+- [Solution URL](https://github.com/your-username/todo-app)
+- [Live Site URL](https://your-live-site-url.com)
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+## My Process
 
-## Building your project
+### Built With
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- React - JavaScript library
+- Next.js - React framework
+- Styled Components - For styles
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+### What I Learned
 
-## Deploying your project
+During this project, I learned how to effectively structure a React application and manage state using React hooks. Implementing the drag and drop functionality for reordering items was a challenging task that taught me about handling complex user interactions in a web application.
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+Here's an example of code I'm proud of:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+```javascript
+// This function handles the drag and drop functionality for reordering items
+const handleDragEnd = (result) => {
+  if (!result.destination) return;
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+  const updatedTodos = Array.from(todos);
+  const [reorderedTodo] = updatedTodos.splice(result.source.index, 1);
+  updatedTodos.splice(result.destination.index, 0, reorderedTodo);
 
-## Create a custom `README.md`
+  setTodos(updatedTodos);
+};
+```
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### Continued Development
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+In future projects, I want to focus on further improving my knowledge of React and exploring more advanced state management techniques like Redux. Additionally, I plan to enhance my understanding of accessibility best practices to create more inclusive web applications.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### Useful Resources
 
-## Submitting your solution
+- [MDN Web Docs](https://developer.mozilla.org/): A comprehensive resource for HTML, CSS, and JavaScript documentation.
+- [Styled Components Documentation](https://styled-components.com/docs): The official documentation for Styled Components, which helped me style my components in a more maintainable way.
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Author
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+- Frontend Mentor - [@your-username](https://www.frontendmentor.io/profile/your-username)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-## Sharing your solution
+## Acknowledgments
 
-There are multiple places you can share your solution:
+I want to thank the Frontend Mentor community for providing this challenge and giving me an opportunity to practice and improve my front-end skills. I also received valuable feedback and support from fellow developers in the community, which was instrumental in completing this project.
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
