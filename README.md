@@ -27,8 +27,7 @@ The challenge was to create a responsive and interactive todo app with various f
 
 ### Links
 
-- [Solution URL](https://github.com/your-username/todo-app)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL]([https://your-live-site-url.com](https://awesome04.github.io/TO-DO-LIST/)
 
 ## My Process
 
@@ -73,8 +72,9 @@ In future projects, I want to focus on further improving my knowledge of React a
 
 ## Author
 
-- Frontend Mentor - [@your-username](https://www.frontendmentor.io/profile/your-username)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Software Engineer, Intern - [AWESOME04](https://github.com/AWESOME04)
+
+- LinkedIn - [Evans Acheampong]([https://www.twitter.com/yourusername](https://www.linkedin.com/in/evans-acheampong-982315232/))
 
 ## Acknowledgments
 
