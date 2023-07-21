@@ -27,7 +27,7 @@ The challenge was to create a responsive and interactive todo app with various f
 
 ### Links
 
-- [Live Site URL]([https://your-live-site-url.com](https://awesome04.github.io/TO-DO-LIST/)
+![Live Site URL](https://awesome04.github.io/TO-DO-LIST/)
 
 ## My Process
 
