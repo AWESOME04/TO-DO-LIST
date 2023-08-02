@@ -74,8 +74,8 @@ In future projects, I want to focus on further improving my knowledge of React a
 
 - Software Engineer, Intern - [AWESOME04](https://github.com/AWESOME04)
 
-- LinkedIn - [Evans Acheampong]([https://www.twitter.com/yourusername](https://www.linkedin.com/in/evans-acheampong-982315232/))
-
+- LinkedIn - [Evans Acheampong](https://www.linkedin.com/in/evans-acheampong-982315232/)
+- 
 ## Acknowledgments
 
 I want to thank the Frontend Mentor community for providing this challenge and giving me an opportunity to practice and improve my front-end skills. I also received valuable feedback and support from fellow developers in the community, which was instrumental in completing this project.
